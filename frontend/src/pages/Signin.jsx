@@ -1,67 +1,43 @@
 import { Container } from '@mui/material';
-import { Box, Typography, FormControl } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Btns from '../components/Button';
-import AuthIcon from '../assets/bitwarden.svg';
-import InputFlds from '../components/Inputfields';
-
-import HeadIcon from '../assets/ininal.svg';
+import InputFlds from '../components/Inputbox';
+import Heading from '../components/Heading';
 
 function SignIn() {
     return (
-        <Container maxWidth="sm">
+        <Container
+            maxWidth="xs"
+            sx={{
+                minHeight: '100vh',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+            }}
+        >
             <Box
                 component="form"
                 sx={{
-                    mt: 4,
+                    width: '100%',
                     display: 'flex',
                     flexDirection: 'column',
-                    gap: 2,
-                    p: 3,
+                    gap: 1.5,
+                    px: 3,
+                    py: 2,
                     boxShadow: 3,
                     borderRadius: 2,
+                    backgroundColor: '#fff',
                 }}
             >
-                <Box
-                    sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        mb: 2,
-                        gap: 1,
-                    }}
-                >
-                    <img
-                        src={HeadIcon}
-                        alt=""
-                        style={{ width: 60, height: 70 }}
-                    ></img>
-                    <br />
-                </Box>
-                <Typography variant="body-2" sx={{ mb: 3 }}>
-                    Secure and fast shopping card that is valid everywhere, has
-                    chip and contactless options.
+                <Heading />
+
+                <Typography variant="h5" fontWeight="bold" sx={{ mb: 1 }}>
+                    Log In
                 </Typography>
 
-                <Box
-                    sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'flex-start',
-                        mb: 2,
-                        gap: 1,
-                    }}
-                >
-                    <img
-                        src={AuthIcon}
-                        alt="Logo"
-                        style={{ width: 40, height: 40 }}
-                    />
-                    <Typography variant="h4" fontWeight="bold">
-                        Login
-                    </Typography>
-                </Box>
                 <InputFlds />
                 <InputFlds />
-                <Btns></Btns>
+                <Btns />
             </Box>
         </Container>
     );

@@ -1,41 +1,42 @@
 import * as React from 'react';
-import { Box, Typography, Link } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import logo from '../assets/ininal.svg';
 
 function Heading() {
     return (
         <Box
             sx={{
-                height: '100vh',
-                width: '100%',
-                maxWidth: 600, // limit width for left side
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'center',
-                padding: 4,
+                alignItems: 'center', // centers everything horizontally
+                paddingX: 3,
+                paddingTop: 3,
+                paddingBottom: 1,
                 backgroundColor: '#ffffff',
             }}
         >
             <Box
                 sx={{
                     display: 'flex',
-                    alignItems: 'center',
-                    mb: 4,
+                    justifyContent: 'center',
+                    mb: 2,
                 }}
             >
-                <img src={logo} alt="Logo" style={{ width: 32, height: 32 }} />
+                <img
+                    src={logo}
+                    alt="ininal logo"
+                    style={{ width: 60, height: 70 }}
+                />
             </Box>
-
-            <Typography variant="h4" fontWeight="bold" sx={{ mb: 1 }}>
-                Hello There!
-            </Typography>
-
             <Typography
-                variant="body1"
-                sx={{ color: 'text.secondary', maxWidth: 300 }}
+                variant="body-2"
+                sx={{
+                    color: 'text.secondary',
+                    width: '100%',
+                    textAlign: 'center', // make the text centered
+                }}
             >
-                Secure and fast shopping card that is valid everywhere, has chip
-                and contactless options.
+                Secure and fast shopping card
             </Typography>
         </Box>
     );

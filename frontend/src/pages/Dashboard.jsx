@@ -1,11 +1,10 @@
 import ResponsiveAppBar from '../components/Appbar';
-import BoxSx from '../components/Inputform';
 
 function Dashboard() {
     return (
-        <>
+        <div>
             <ResponsiveAppBar />
-        </>
+        </div>
     );
 }
 
