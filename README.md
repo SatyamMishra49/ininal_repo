@@ -1,2 +1,2 @@
-# ininal_repo
+# cashapp_repo
 e-commerce platform
