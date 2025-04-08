@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Box, Typography } from '@mui/material';
-import logo from '../assets/ininal.svg';
+import logo from '../assets/CashApp.svg';
 
 function Heading() {
     return (

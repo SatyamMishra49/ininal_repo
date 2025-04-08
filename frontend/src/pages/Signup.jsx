@@ -1,66 +1,59 @@
-import { Container } from '@mui/material';
-import { Box, Typography, FormControl } from '@mui/material';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
 import Btns from '../components/Button';
-import AuthIcon from '../assets/bitwarden.svg';
 import InputFlds from '../components/Inputbox';
-
-import HeadIcon from '../assets/ininal.svg';
+import Logo from '../assets/CashApp.svg';
 
 function SignUp() {
     return (
-        <Container maxWidth="sm">
-            <Box
-                component="form"
-                sx={{
-                    mt: 4,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: 2,
-                    p: 3,
-                    boxShadow: 3,
-                    borderRadius: 2,
-                }}
+        <div className="w-screen h-screen flex">
+            <div
+                className="w-1/2 p-4 flex items-center justify-center"
+                style={{ backgroundColor: 'oklch(96.7% 0.067 122.328)' }}
             >
-                <Box
+                <img src={Logo} alt="Logo" className="w-40 h-auto" />
+            </div>
+            <div className="w-1/2 p-4">
+                <Container
+                    maxWidth="xs"
                     sx={{
+                        minHeight: '100vh',
                         display: 'flex',
                         alignItems: 'center',
-                        mb: 2,
-                        gap: 1,
+                        justifyContent: 'center',
                     }}
                 >
-                    <img
-                        src={HeadIcon}
-                        alt=""
-                        style={{ width: 60, height: 70 }}
-                    ></img>
-                    <br />
-                </Box>
-                <Typography variant="body-2" sx={{ mb: 3 }}>
-                    Secure and fast shopping card that is valid everywhere, has
-                    chip and contactless options.
-                </Typography>
+                    <Box
+                        component="form"
+                        sx={{
+                            width: '100%',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: 1.5,
+                            px: 3,
+                            py: 2,
+                            boxShadow: 3,
+                            borderRadius: 2,
+                            backgroundColor: '#fff',
+                        }}
+                    >
+                        <Typography
+                            variant="h5"
+                            fontWeight="bold"
+                            sx={{ mb: 1 }}
+                        >
+                            Log In
+                        </Typography>
 
-                <Box
-                    sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'flex-start',
-                        mb: 2,
-                        gap: 1,
-                    }}
-                >
-                    <Typography variant="h4" fontWeight="bold">
-                        Sign Up
-                    </Typography>
-                </Box>
-                <InputFlds />
-                <InputFlds />
-                <InputFlds />
-                <InputFlds />
-                <Btns></Btns>
-            </Box>
-        </Container>
+                        <InputFlds />
+                        <InputFlds />
+                        <Btns />
+                    </Box>
+                </Container>
+            </div>
+        </div>
     );
 }
 
