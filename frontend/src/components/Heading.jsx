@@ -8,7 +8,7 @@ function Heading() {
             sx={{
                 display: 'flex',
                 flexDirection: 'column',
-                alignItems: 'center', // centers everything horizontally
+                alignItems: 'center',
                 paddingX: 3,
                 paddingTop: 3,
                 paddingBottom: 1,
@@ -29,14 +29,14 @@ function Heading() {
                 />
             </Box>
             <Typography
-                variant="body-2"
+                variant="body-1"
                 sx={{
                     color: 'text.secondary',
                     width: '100%',
-                    textAlign: 'center', // make the text centered
+                    textAlign: 'center',
                 }}
             >
-                Secure and fast shopping card
+                It’s more than banking. It’s Cash App.
             </Typography>
         </Box>
     );
