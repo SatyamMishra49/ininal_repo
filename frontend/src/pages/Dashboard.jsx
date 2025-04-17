@@ -1,11 +1,3 @@
-import ResponsiveAppBar from '../components/Appbar';
-
-function Dashboard() {
-    return (
-        <div>
-            <ResponsiveAppBar />
-        </div>
-    );
+export default function Dashboard() {
+    return <div>Dashboard Page</div>;
 }
-
-export default Dashboard;
