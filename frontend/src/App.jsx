@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
+import Signin from './pages/Signin';
+import Signup from './pages/Signup';
+import Homepage from './pages/Homepage';
 import Dashboard from './pages/Dashboard';
-import SignIn from './pages/Signin';
-import SignUp from './pages/Signup';
-import SendMoney from './pages/Sendmoney';
+import Transfer from './pages/Transaction';
 
 function App() {
     return (
@@ -11,10 +11,11 @@ function App() {
             <>
                 <BrowserRouter>
                     <Routes>
-                        <Route path="/signup" element={<SignUp />} />
-                        <Route path="/signin" element={<SignIn />} />
+                        <Route path="/" element={<Homepage />} />
+                        <Route path="/signup" element={<Signin />} />
+                        <Route path="/signin" element={<Signup />} />
                         <Route path="/dashboard" element={<Dashboard />} />
-                        <Route path="/send" element={<SendMoney />} />
+                        <Route path="/send" element={<Transfer />} />
                     </Routes>
                 </BrowserRouter>
             </>
