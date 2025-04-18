@@ -11,9 +11,9 @@ export default function Signup() {
                         <Heading />
                     </div>
                     <div className="font-bold text-purple-800 text-xl">
-                        Welcome Back
+                        Create PhonePe Account!
                     </div>
-                    <div className="text-gray-700">Login to continue</div>
+                    <div className="text-gray-700">India's Payment App</div>
                     <div className="w-16 h-2 bg-purple-800 mt-2 mb-2"></div>
                     <Inputbox label={'Email'} placeholder={''} />
                     <Inputbox label={'Name'} placeholder={''} />
