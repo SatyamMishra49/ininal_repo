@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Logo from '../assets/PhonePe.svg';
 import BannerImage from '../assets/PhonePe_Banner.webp';
 
@@ -8,15 +9,9 @@ export default function Homepage() {
                 <div className="w-[150px]">
                     <img src={Logo} alt="Logo"></img>
                 </div>
-                <ul className="hidden md:flex space-x-6 text-sm font-medium text-gray-800">
-                    <li>OUR SOLUTIONS</li>
-                    <li>PRESS</li>
-                    <li>CAREERS</li>
-                    <li>ABOUT US</li>
-                    <li>BLOG</li>
-                    <li>CONTACT US</li>
-                    <li>TRUST & SAFETY</li>
-                </ul>
+                <Link to={'/signin'}>
+                    <ul className="hidden md:flex space-x-6 text-lg font-medium text-gray-700"></ul>
+                </Link>
             </nav>
 
             <div className="flex flex-col md:flex-row flex-1 justify-center bg-cyan-100">

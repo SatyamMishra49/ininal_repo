@@ -1,15 +1,9 @@
 import Appbar from '../components/Appbar';
 
-export default function Dashboard() {
+export default function Dashboard({ user = 'Satyam', balance = 23560 }) {
     return (
         <div>
             <Appbar />
-
-            <div className="grid gird-cols-3 gap-6 px-4 md:px-12 py-8">
-                <div class="flex flex-col items-center p-6 bg-white border border-gray-200 rounded-lg shadow-lg text-2xl">
-                    User Data
-                </div>
-            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-12 py-8">
                 <div className="border rounded-lg p-6 flex flex-col items-center shadow hover:shadow-md transition">
                     <svg

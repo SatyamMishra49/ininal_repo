@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../assets/PhonePe.svg';
+import { Link } from 'react-router-dom';
 
 export default function Appbar() {
     const [showDropdown, setShowDropdown] = useState(false);
@@ -49,36 +50,28 @@ export default function Appbar() {
                         </div>
                         <ul className="py-1">
                             <li>
-                                <a
-                                    href="#"
-                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                <Link
+                                    to={'/'}
+                                    className="block px-4 py-2 text-m text-gray-700 hover:bg-gray-100"
                                 >
-                                    Dashboard
-                                </a>
+                                    <button>Home</button>
+                                </Link>
                             </li>
                             <li>
-                                <a
-                                    href="#"
-                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                <Link
+                                    to={'/'}
+                                    className="block px-4 py-2 text-m text-gray-700 hover:bg-gray-100"
                                 >
-                                    Settings
-                                </a>
+                                    <button>Balance</button>
+                                </Link>
                             </li>
                             <li>
-                                <a
-                                    href="#"
-                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                <Link
+                                    to={'/'}
+                                    className="block px-4 py-2 text-m text-gray-700 hover:bg-gray-100"
                                 >
-                                    Earnings
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                >
-                                    Sign out
-                                </a>
+                                    <button>Logout</button>
+                                </Link>
                             </li>
                         </ul>
                     </div>
