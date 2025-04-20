@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../assets/PhonePe.svg';
 import BannerImage from '../assets/PhonePe_Banner.webp';
 
-export default function Homepage() {
+export default function Home() {
     return (
         <div className="min-h-screen flex flex-col">
             <nav className="flex items-center justify-between px-12 py-4 shadow-sm">
